@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weight</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="weights.css" />
+    <link rel="icon" href="../../images/logo2.jpg" />
+    <script type="text/javascript">
+          window.onload = function () {
+            var dps = []; //dataPoints.
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+              title: {
+                text: "Weight Change",
+              },
+              axisX: {
+                title: "Date"
+              },
+              axisY: {
+                title: "Weight",
+                suffix: "Kg",
+                includeZero: true
+              },
+              data: [
+                {
+                  type: "spline",
+                  dataPoints: dps,
+                },
+              ],
+            });
+
+            function addDataPointsAndRender() {
+              xValue = Number(document.getElementById("xValue").value);
+              yValue = Number(document.getElementById("yValue").value);
+              dps.push({
+                x: xValue,
+                y: yValue,
+              });
+              chart.render();
+            }
+
+            var renderButton = document.getElementById("renderButton");
+            renderButton.addEventListener("click", addDataPointsAndRender);
+          };
+    </script>
+    <script
+      type="text/javascript"
+      src="https://canvasjs.com/assets/script/canvasjs.min.js"
+    ></script>
+  </head>
+  <body>
+    <header class="container">
+      <a href="../../main.html" class="logo"
+        ><img src="../../images/logo.jpg" alt="logo"
+      /></a>
+      <ul>
+        <li><a href="../../main.html">Home</a></li>
+        <li><a href="../../header/introduction.html">Introduction</a></li>
+        <li><a href="../../header/login.html">Login</a></li>
+      </ul>
+    </header>
+    <article class="container">
+      <div class="v250 text-center">
+        <h2>Record your weight change!</h2>
+        <p>Day Introduction: <br>For Day 1, enter 1 for the Day and for Day 2, enter 2 for the Day<br></p>
+      </div>
+      <div class="values">
+        Day :
+        <input
+          id="xValue"
+          type="string"
+          placeholder="Enter the date"
+        />
+        Weight :
+        <input
+          id="yValue"
+          type="number"
+          step="any"
+          placeholder="Enter the weight"
+        />
+        <button id="renderButton">Add DataPoint & Render</button>
+        <div id="chartContainer" style="height: 500px; width: 100%; margin-top: 50px;"></div>
+      </div>
+    </article>
+    <footer class="container">
+      <div class="footlogo">@ICS4UProject-HenryLee</div>
+      <ul>
+        <li>
+          <a href="../footer/owner.html">Who is the owner of the Website?</a>
+        </li>
+        <li><a href="../footer/termofuse.html">Term of Use</a></li>
+        <li>
+          <a href="../footer/cookieandpolicy.html">Cookie and Privacy Policy</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

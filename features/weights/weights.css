@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #d2d2d2;
+}
+
+.containrer-full {
+  width: 100%;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 80px;
+  padding: 10px 20px 0;
+}
+
+header a.logo {
+  float: left;
+  margin-top: 8px;
+}
+
+header a.logo img {
+  width: 50%;
+}
+
+header ul {
+  list-style: none;
+  float: right;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #3d3d3d;
+  padding: 0 5px;
+  margin: 0 10px;
+  width: 100px;
+}
+
+header ul li a:hover {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #ff4e00;
+  color: #ff4e00;
+}
+.v250 {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.v250 h1 {
+    font-size: 1.85rem;
+    font-weight: normal;
+}
+
+.v250 p {
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+.text-center {
+  text-align: center;
+}
+
+.values {
+  margin-left: 15px;
+}
+
+footer {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footlogo {
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #999;
+}
+
+footer ul li a:hover {
+  color: orange;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #d2d2d2;
+}
+
+.containrer-full {
+  width: 100%;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 80px;
+  padding: 10px 20px 0;
+}
+
+header a.logo {
+  float: left;
+  margin-top: 8px;
+}
+
+header a.logo img {
+  width: 50%;
+}
+
+header ul {
+  list-style: none;
+  float: right;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #3d3d3d;
+  padding: 0 5px;
+  margin: 0 10px;
+  width: 100px;
+}
+
+header ul li a:hover {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #ff4e00;
+  color: #ff4e00;
+}
+
+footer {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footlogo {
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #999;
+}
+
+footer ul li a:hover {
+  color: orange;
+}
