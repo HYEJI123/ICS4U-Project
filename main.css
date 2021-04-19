@@ -1,0 +1,173 @@
+body {
+  /*Default Body Setting*/
+  margin: 0;
+  padding: 0;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #d2d2d2;
+}
+
+.containrer-full {
+  width: 100%;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 80px; /*Limitting Min height of Header so things will fit*/
+  padding: 10px 20px 0;
+}
+
+header a.logo {
+  float: left;
+  margin-top: 8px;
+}
+
+header a.logo img {
+  /*Limitting Logo Image width*/
+  width: 50%;
+}
+
+header ul {
+  list-style: none;
+  float: right;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #3d3d3d;
+  padding: 0 5px;
+  margin: 0 10px;
+  width: 100px;
+}
+
+header ul li a:hover {
+  /*Hover Things in Header will make them in different colour*/
+  padding-bottom: 8px;
+  border-bottom: 3px solid #ff4e00;
+  color: #ff4e00;
+}
+
+.main-img {
+  /*The big picture on main page*/
+  height: 600px;
+  overflow: hidden;
+  background: url(images/crossfit.jpg) top center no-repeat;
+  background-size: cover;
+}
+
+.text-box {
+  /*The text box inside big picture*/
+  position: relative;
+  float: right;
+  right: 50px;
+  top: 100px;
+  padding: 10px 25px;
+  width: 30%;
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-center {
+  text-align: center;
+}
+
+.row {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.col-4 {
+  width: 50%;
+  float: left;
+}
+
+.gray-back {
+  /*Background*/
+  background-color: #f2f2f2;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.v250 {
+  /*4 Sections*/
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.v250 h2 {
+  /*h2 of 4 sections(bigger text)*/
+  font-size: 1.85rem;
+  font-weight: normal;
+}
+
+.v250 p {
+  /*p of 4 sections(smaller text)*/
+  font-size: 1rem;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.img-part figure .box {
+  /*boxes of 4 sections*/
+  width: 400px;
+  height: 400px;
+  border-radius: 30%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-part figure img {
+  width: 400px;
+  overflow: auto;
+}
+
+.img-part figcaption {
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer {
+  /*footer*/
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footlogo {
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #999;
+}
+
+footer ul li a:hover {
+  color: orange;
+}
